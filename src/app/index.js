@@ -1,25 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import fetchData from '../fetchData';
+// import React, { useEffect, useState } from 'react';
+// import fetchData from '../fetchData';
 
-const IndexPage = () => {
-  const [players, setPlayers] = useState([]);
+// const IndexPage = () => {
+//   const [players, setPlayers] = useState([]);
 
-  useEffect(() => {
-    async function fetchPlayers() {
-      const data = await fetchData();
-      setPlayers(data.players);
-    }
+//   useEffect(() => {
+//     async function fetchPlayers() {
+//       const data = await fetchData();
+//       setPlayers(data.players);
+//     }
 
-    fetchPlayers();
-  }, []);
+//     fetchPlayers();
+//   }, []);
 
-  return (
-    <div>
-      {players.map((player, index) => (
-        <PlayerStats key={index} player={player} />
-      ))}
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       {players.map((player, index) => (
+//         <PlayerStats key={index} player={player} />
+//       ))}
+//     </div>
+//   );
+// };
 
-export default IndexPage;
+// export default IndexPage;
+// // 
